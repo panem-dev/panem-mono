@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import cn from 'classnames';
 import React, { forwardRef, useRef, ButtonHTMLAttributes } from 'react';
 import mergeRefs from 'react-merge-refs';
@@ -13,6 +14,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   Component?: React.ComponentType;
 }
 
+// eslint-disable-next-line react/display-name
 const Button = forwardRef<HTMLButtonElement, Props>((props, buttonRef) => {
   const {
     className,

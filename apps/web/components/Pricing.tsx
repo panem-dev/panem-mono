@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import cn from 'classnames';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
