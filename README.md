@@ -1,6 +1,4 @@
-# Turborepo starter
-
-This is an official Yarn v1 starter turborepo.
+# Panem monorepo
 
 ## What's inside?
 
@@ -8,9 +6,8 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package ma
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
 - `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
+- `ui`: a stub React component library shared by all applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
@@ -46,32 +43,18 @@ cd my-turborepo
 yarn run dev
 ```
 
-### Remote Caching
+### Tech stack
 
-Turborepo can use a technique known as [Remote Caching (Beta)](https://turborepo.org/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+- NextJs (Client facing PWA, Serverless functions for Backend)
+- Supabase (Authentication, Database)
+- ThirdWeb to manage (Minting of shares as NFT tokens based on Ethereum)
+- Vercel (Hosting, Domain)
+- Turborepo (Manage application repo)
 
-By default, Turborepo will cache locally. To enable Remote Caching (Beta) you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+### Architectural Diagram
 
-```
-cd my-turborepo
-npx turbo login
-```
+- https://drive.google.com/file/d/1bmBhDI8E9EygLGFyp3A5zWKnz8Ed_9dX/view?usp=sharing
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+### ERD
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
-- [Caching](https://turborepo.org/docs/core-concepts/caching)
-- [Remote Caching (Beta)](https://turborepo.org/docs/core-concepts/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+- https://drive.google.com/file/d/1jUOeRthPPFvB7cqdBnt2e2GU7ve9P8fy/view?usp=sharing
